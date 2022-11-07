@@ -81,8 +81,23 @@ service apache2 restart
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/127001.PNG)
 
 #### Mysql
-```sudo apt install mariadb-server```
+
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/mysql%20install.PNG)
 
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/nextcloud%20privileges.PNG)
 
+### IP configuration
+Supprime l'adresse ip par défaut si nécessaire
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/change%20ip%20address.PNG)
+
+
+Ajouter la nouvelle adresse ip comme autre entrer
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/add%20ip%20to%20access.PNG)
+
+
+### Nextcloud config
+
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/it%20works.PNG)
+
+
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/it%20works%20also.PNG)
