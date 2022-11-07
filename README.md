@@ -18,7 +18,7 @@ L'image dessous montre ubuntu 22.04 mais j'ai changé a ubuntu 20.04
 
 ### Install Apache2
 
-``
+```
 sudo apt install apache2 mariadb-server libapache2-mod-php php-gd php-mysql 
 php-curl php-mbstring php-intl php-gmp php-bcmath php-xml php-imagick php-zip
 ```
@@ -32,6 +32,7 @@ php-curl php-mbstring php-intl php-gmp php-bcmath php-xml php-imagick php-zip
 unzip le fichier dans /home
 
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/file%20installed.PNG)
+
 ```
 sudo apt install unzip
 
@@ -39,3 +40,33 @@ ls
 
 unzip nextcloud-18.0.0.zip
 ```
+
+### Permission
+
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/alt1.PNG)
+
+```
+sudo mv nextcloud /var/www/html/nextcloud/
+
+sudo mkdir /var/www/html/nextcloud/data
+
+sudo chown -R www-data:www-data /var/www/html/nextcloud/
+
+sudo chown -R 755 /var/www/html/nextcloud/
+
+```
+
+
+```sudo nano  /etc/apache2//sites-available/nextcloud.conf```
+Entre ces informations
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/nano%20conf%20file.PNG)
+
+
+```sudo nano /etc/apache2/apache2.conf```
+Tape a la fin du fichier
+
+AcceptFilter http none
+AcceptFilter https none
+
+
+###Enable Apache2
