@@ -69,4 +69,20 @@ AcceptFilter http none
 AcceptFilter https none
 
 
-###Enable Apache2
+### Enable Apache2
+
+service apache2 start
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/APACHE2%20WORKS.PNG)
+
+service apache2 restart
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/apache2%20up%20and%20running.PNG)
+
+!
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/127001.PNG)
+
+#### Mysql
+```sudo apt install mariadb-server```
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/mysql%20install.PNG)
+
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/nextcloud%20privileges.PNG)
+
