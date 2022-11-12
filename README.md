@@ -25,7 +25,7 @@ php-curl php-mbstring php-intl php-gmp php-bcmath php-xml php-imagick php-zip
 
 ### Download nextcloud
 
-!image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/wget%20nextcloud.PNG)
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/wget%20nextcloud.PNG)
 
 ```wget https://download.nextcloud.com/server/releases/nextcloud-18.0.0.zip```
 
