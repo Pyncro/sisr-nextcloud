@@ -97,6 +97,8 @@ Ajouter la nouvelle adresse ip comme autre entrer
 
 ### Nextcloud config
 
+https://127.0.0.1
+
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/it%20works.PNG)
 
 
