@@ -4,7 +4,7 @@
 
 j'ai décidé d'utiliser wsl sous windows car il est plus rapide à configurer et à installer.
 
-L'image dessous montre ubuntu 22.04 mais j'ai changé a ubuntu 20.04
+L'image montre ubuntu 22.04 mais j'ai changé a ubuntu 20.04
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/wsl.PNG)
 
 
