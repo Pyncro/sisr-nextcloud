@@ -57,12 +57,13 @@ sudo chown -R 755 /var/www/html/nextcloud/
 ```
 
 
-```sudo nano  /etc/apache2//sites-available/nextcloud.conf```
+```sudo nano  /etc/apache2/sites-available/nextcloud.conf```
 Entre ces informations
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/nano%20conf%20file.PNG)
 
 
-``` <VirtualHost *:80>
+```
+<VirtualHost *:80>
   DocumentRoot /var/www/nextcloud/
   ServerName  your.server.com
 
@@ -75,8 +76,11 @@ Entre ces informations
       Dav off
     </IfModule>
   </Directory>
-</VirtualHost> ```
+</VirtualHost>
+```
 
+
+</VirtualHost>
 
 ```sudo nano /etc/apache2/apache2.conf```
 Tape a la fin du fichier
