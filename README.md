@@ -176,7 +176,7 @@ sudo chown -R 755 /var/www/html/nextcloud/
   DocumentRoot /var/www/html/nextcloud/
   ServerName  monge.nextcloud.com
 
-  <Directory /var/www/nextcloud/>
+  <Directory /var/www/html/nextcloud/>
     Require all granted
     AllowOverride All
     Options FollowSymLinks MultiViews
