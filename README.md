@@ -59,6 +59,7 @@ sudo chown -R 755 /var/www/html/nextcloud/
 
 ```sudo nano  /etc/apache2/sites-available/nextcloud.conf```
 Entre ces informations
+
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/nano%20conf%20file.PNG)
 
 
@@ -75,9 +76,11 @@ AcceptFilter https none
 ### Enable Apache2
 
 service apache2 start
+
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/APACHE2%20WORKS.PNG)
 
 service apache2 restart
+
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/apache2%20up%20and%20running.PNG)
 
 !
@@ -91,10 +94,12 @@ service apache2 restart
 
 ### IP configuration
 Supprime l'adresse ip par défaut si nécessaire
+
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/change%20ip%20address.PNG)
 
 
 Ajouter la nouvelle adresse ip comme autre entrer
+
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/add%20ip%20to%20access.PNG)
 
 
