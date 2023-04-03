@@ -179,7 +179,7 @@ sudo chown -R 755 /var/www/html/nextcloud/
 
 </VirtualHost>
 
-###Enable mods & sites
+### Enable mods & sites
 
 ```a2ensite nextcloud.conf```
 ``` a2enmod rewrite ```
