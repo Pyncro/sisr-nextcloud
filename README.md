@@ -123,3 +123,34 @@ https://127.0.0.1
 
 
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/it%20works%20also.PNG)
+
+
+
+## UBUNTU 20.04 - VMWARE WORKSTATION
+```sudo apt-get update```
+```sudo apt-get upgrade```
+```sudo apt install apache2 mariadb-server libapache2-mod-php7.4``
+``sudo apt install php7.4-gd php7.4-mysql php7.4-curl php7.4-mbstring php7.4-intl```
+```sudo apt install php7.4-gmp php7.4-bcmath php-imagick php7.4-xml php7.4-zip```
+
+
+
+## Mariadb configuration
+
+```
+mariadb>
+
+CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+CREATE DATABASE IF NOT EXISTS nextcloud CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+GRANT ALL PRIVILEGES ON nextcloud.* TO 'username'@'localhost';
+FLUSH PRIVILEGES;
+quit;
+
+```
+
+## Nextcloud download & configuration
+
+```wget https://download.nextcloud.com/server/releases/nextcloud-18.0.0.zip```
+
+
+
