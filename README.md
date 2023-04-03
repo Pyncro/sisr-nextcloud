@@ -152,5 +152,47 @@ quit;
 
 ```wget https://download.nextcloud.com/server/releases/nextcloud-18.0.0.zip```
 
+```
+sudo apt install unzip
+
+unzip nextcloud-18.0.0.zip
+```
+
+```
+sudo mv nextcloud /var/www/html/nextcloud/
+
+sudo mkdir /var/www/html/nextcloud/data
+
+sudo chown -R www-data:www-data /var/www/html/nextcloud/
+
+sudo chown -R 755 /var/www/html/nextcloud/
+
+```
+
+```sudo nano  /etc/apache2/sites-available/nextcloud.conf```
+
+```
+<VirtualHost *:80>
+  DocumentRoot /var/www/nextcloud/
+  ServerName  your.server.com
+
+  <Directory /var/www/nextcloud/>
+    Require all granted
+    AllowOverride All
+    Options FollowSymLinks MultiViews
+
+    <IfModule mod_dav.c>
+      Dav off
+    </IfModule>
+  </Directory>
+</VirtualHost>
+```
 
 
+</VirtualHost>
+
+```sudo nano /etc/apache2/apache2.conf```
+Tape a la fin du fichier
+
+AcceptFilter http none
+AcceptFilter https none
