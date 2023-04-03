@@ -173,8 +173,8 @@ sudo chown -R 755 /var/www/html/nextcloud/
 
 ```
 <VirtualHost *:80>
-  DocumentRoot /var/www/nextcloud/
-  ServerName  your.server.com
+  DocumentRoot /var/www/html/nextcloud/
+  ServerName  monge.nextcloud.com
 
   <Directory /var/www/nextcloud/>
     Require all granted
@@ -198,4 +198,3 @@ Tape a la fin du fichier
 
 ```AcceptFilter https none```
 
-![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/apt%20upgrade.PNG)
