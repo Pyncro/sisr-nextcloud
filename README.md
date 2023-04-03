@@ -62,23 +62,6 @@ Entre ces informations
 ![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/nano%20conf%20file.PNG)
 
 
-```
-<VirtualHost *:80>
-  DocumentRoot /var/www/nextcloud/
-  ServerName  your.server.com
-
-  <Directory /var/www/nextcloud/>
-    Require all granted
-    AllowOverride All
-    Options FollowSymLinks MultiViews
-
-    <IfModule mod_dav.c>
-      Dav off
-    </IfModule>
-  </Directory>
-</VirtualHost>
-```
-
 
 </VirtualHost>
 
