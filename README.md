@@ -194,5 +194,8 @@ sudo chown -R 755 /var/www/html/nextcloud/
 ```sudo nano /etc/apache2/apache2.conf```
 Tape a la fin du fichier
 
-AcceptFilter http none
-AcceptFilter https none
+```AcceptFilter http none```
+
+```AcceptFilter https none```
+
+![image](https://github.com/Pyncro/sisr-nextcloud/blob/main/img/apt%20upgrade.PNG)
