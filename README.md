@@ -153,7 +153,7 @@ sudo mkdir /var/www/html/nextcloud/data
 
 sudo chown -R www-data:www-data /var/www/html/nextcloud/
 
-sudo chown -R 755 /var/www/html/nextcloud/
+sudo chown 777 /var/www/html/nextcloud/
 
 ```
 
